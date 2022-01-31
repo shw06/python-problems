@@ -1,10 +1,11 @@
-print("Welcome to treasure island!!!")
+print("Welcome to treasure island!!!") #greeting
 print("let's begin shall we?")
+#main program starts
 print("Your mission is to find the treasure")
 
-choice1 = input('You are at the crossroad, where do you wanto to go?\nType"left" or "right".\n').lower()
-
-if choice1 == "left":
+choice1 = input('You are at the crossroad, where do you wanto to go?\nType"left" or "right".\n').lower() #take user input
+#loop
+if choice1 == "left":  
     choice2 = input('You arrived at the lake. There is an island, there is a island in the middle.\nDo you wan to "swim" or "wait".\n').lower()
     if choice2 == "swim":
         choice3 = input('You finally arrived at the island. There is a house with three doors. "Red", "Green" and "Blue".\nChoose one.\n').lower()
