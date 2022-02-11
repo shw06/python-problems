@@ -6,7 +6,6 @@ sub4 = int(input())
 sub5 = int(input())
 sub6 = int(input())
 
-
 total = sub1 + sub2 + sub3 + sub4 + sub5 + sub6
 avg = total/6
 
@@ -29,4 +28,4 @@ elif avg >= 21 and avg <= 31:
 elif avg >= 0 and avg <= 21:
     print("You got E+")
 else:
-    print("Invalid input!")
+    print("Invalid input")
