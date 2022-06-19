@@ -1,8 +1,8 @@
 class Player:
-    teamName = "Liverpool"
+    teamName = "Liverpool" #class variable
 
     def __init__(self, name):
-        self.name = name
+        self.name = name #instance variable
 
 
 p1 = Player('Salah')
