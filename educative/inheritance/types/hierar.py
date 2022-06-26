@@ -1,18 +1,19 @@
-class Vehicle:
-    def setTopSpeed(self,speed):
+class Vehicle:  # parent class
+    def setTopSpeed(self, speed):  # defining the set
         self.topSpeed = speed
-        print("The top speed is set to: ", self.topSpeed)
+        print("Top speed is set to", self.topSpeed)
 
-class Car(Vehicle):
+
+class Car(Vehicle):  # child class of Vehicle
     pass
 
-class Truck(Vehicle):
+
+class Truck(Vehicle):  # child class of Vehicle
     pass
 
 
-corolla = Car()
-corolla.setTopSpeed(220)
+corolla = Car()  # creating an object of the Car class
+corolla.setTopSpeed(220)  # accessing methods from the parent class
 
-volco = Truck()
-volco.setTopSpeed(320)
-
+volvo = Truck()  # creating an object of the Truck class
+volvo.setTopSpeed(180)  # accessing methods from the parent class
