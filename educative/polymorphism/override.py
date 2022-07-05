@@ -1,18 +1,23 @@
 # Override a Method Using the Super Function
 
+# Parent Class
 class Shape:
     sname = "Shape"
 
     def getName(self):
         return self.sname
 
-class Xshape(Shape):
+
+# child class
+class XShape(Shape):
+    # initializer
     def __init__(self, name):
-        self.xname = name
+        self.xsname = name
 
-    def getName(self):
-        return (super().getName()+ ','+self.xname)
+    def getName(self):  # overriden method
+        return (super().getName() + ", " + self.xsname)
 
-circle = Xshape("Circle")
+
+circle = XShape("Circle")
 print(circle.getName())
 
