@@ -19,6 +19,6 @@ def check_balance(brackets):
 
     return check == 0
 
-bracket_string = '[[[]]]'
+bracket_string = '{{{{{}}}}}'
 
 print(check_balance(bracket_string))
