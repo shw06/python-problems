@@ -1,6 +1,8 @@
 import random
 import array
 
+from passlib.hash import pbkdf2_sha256
+
 # give max length
 max_length = 12
 
@@ -48,3 +50,13 @@ for i in temp_pass_list:
     password = password + i
 
 print(password)
+
+
+hash_pass = input("Now do you want to hash this password in SHA: ")
+
+if hash_pass == "yes" or hash_pass == "Yes" or hash_pass == "YES":
+    password = pbkdf2_sha256.hash(password)
+    print("Your hashed password is: \n", password)
+elif hash_pass == "No" or hash_pass == "no":
+    print("Okay congratulations")
+
