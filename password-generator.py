@@ -52,7 +52,7 @@ for i in temp_pass_list:
 print(password)
 
 
-hash_pass = input("Now do you want to hash this password in SHA: ")
+hash_pass = input("Now do you want to hash this password using SHA: ")
 
 if hash_pass == "yes" or hash_pass == "Yes" or hash_pass == "YES":
     password = pbkdf2_sha256.hash(password)
